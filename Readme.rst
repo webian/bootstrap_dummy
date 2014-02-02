@@ -92,7 +92,7 @@ As further reading, I recommend the `excellent work / documentation`_ from `@Nam
 .. _excellent work / documentation: http://fedext.net/features.html
 .. _@NamelessCoder: https://twitter.com/NamelessCoder
 .. _Wildside: http://www.wildside.dk/da/start/
-.. _fluidpages_bootstrap: https://github.com/NamelessCoder/fluidpages_bootstrap
+.. _fluidpages_bootstrap: https://github.com/FluidTYPO3/fluidpages_bootstrap
 
 
 What special features is here?
