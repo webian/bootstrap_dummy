@@ -132,8 +132,6 @@ It can be performed by adding configuration in directory ``EXT:speciality/Config
 
 * A PHP file can be added ``EXT:speciality/Configuration/Development/DefaultConfiguration.php`` for PHP configuration which will also be automatically loaded. Just make sure, the extension "speciality" is loaded at last to avoid unwanted behaviour.
 
-Tip: check out default PHP configuration from ``EXT:speciality/Configuration/Php/DefaultConfiguration.php``
-
 Tip for development
 ---------------------
 
