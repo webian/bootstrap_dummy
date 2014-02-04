@@ -18,7 +18,7 @@
 ###########
 /htdocs/nbproject
 /htdocs/typo3_src*
-
+/htdocs/typo3temp*
 
 ###########
 # /fileadmin/*
