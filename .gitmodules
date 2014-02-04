@@ -46,3 +46,15 @@
 [submodule "htdocs/typo3conf/ext/vidi"]
 	path = htdocs/typo3conf/ext/vidi
 	url = git://git.typo3.org/TYPO3CMS/Extensions/vidi.git
+[submodule "htdocs/typo3conf/ext/uncache"]
+	path = htdocs/typo3conf/ext/uncache
+	url = git://github.com/FluidTYPO3/uncache
+[submodule "htdocs/typo3conf/ext/extension_builder"]
+	path = htdocs/typo3conf/ext/extension_builder
+	url = git://github.com/TYPO3-extensions/extension_builder.git
+[submodule "htdocs/typo3conf/ext/specialityglobal"]
+	path = htdocs/typo3conf/ext/specialityglobal
+	url = git://github.com/webian/specialityglobal
+[submodule "htdocs/typo3conf/ext/specialitylocal"]
+	path = htdocs/typo3conf/ext/specialitylocal
+	url = git://github.com/webian/specialitylocal
