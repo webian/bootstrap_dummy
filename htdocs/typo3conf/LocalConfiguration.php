@@ -13,6 +13,7 @@ return array(
 	),
 	'EXT' => array(
 		'extConf' => array(
+			'extension_builder' => 'a:3:{s:15:"enableRoundtrip";s:0:"";s:15:"backupExtension";s:1:"1";s:9:"backupDir";s:35:"uploads/tx_extensionbuilder/backups";}',
 			'fluidcontent' => 'a:1:{s:9:"removeTab";s:1:"1";}',
 			'fluidcontent_bootstrap' => 'a:0:{}',
 			'fluidpages' => 'a:2:{s:8:"doktypes";s:0:"";s:10:"autoRender";s:1:"0";}',
@@ -96,6 +97,7 @@ return array(
 			'nc_staticfilecache',
 			'infinite_scroll_gallery',
 			'opendocs',
+			'extension_builder',
 			'speciality',
 		),
 	),
