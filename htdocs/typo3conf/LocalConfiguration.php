@@ -34,6 +34,7 @@ return array(
 			'scheduler' => 'a:4:{s:11:"maxLifetime";s:4:"1440";s:11:"enableBELog";s:1:"1";s:15:"showSampleTasks";s:1:"1";s:11:"useAtdaemon";s:1:"0";}',
 			'seo_basics' => 'a:2:{s:10:"xmlSitemap";s:1:"1";s:16:"sourceFormatting";s:1:"1";}',
 			'speciality' => 'a:0:{}',
+			'specialityglobal' => 'a:0:{}',
 			'uncache' => 'a:0:{}',
 			'vhs' => 'a:0:{}',
 			'vidi' => 'a:2:{s:10:"data_types";s:18:"fe_users,fe_groups";s:11:"default_pid";s:1:"1";}',
@@ -100,6 +101,7 @@ return array(
 			'extension_builder',
 			'uncache',
 			'speciality',
+			'specialityglobal',
 		),
 	),
 	'EXTCONF' => array(
