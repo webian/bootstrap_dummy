@@ -82,7 +82,6 @@ return array(
 			'fluidpages',
 			'fluidcontent',
 			'fluidcontent_bootstrap',
-			'speciality',
 			'linkvalidator',
 			'realurl',
 			'news',
@@ -97,6 +96,7 @@ return array(
 			'nc_staticfilecache',
 			'infinite_scroll_gallery',
 			'opendocs',
+			'speciality',
 		),
 	),
 	'EXTCONF' => array(
