@@ -98,6 +98,7 @@ return array(
 			'infinite_scroll_gallery',
 			'opendocs',
 			'extension_builder',
+			'uncache',
 			'speciality',
 		),
 	),
