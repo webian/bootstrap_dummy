@@ -88,11 +88,11 @@ if (FALSE) {
 }
 
 // company support details
-if (FALSE) {
+if (TRUE) {
 	// admin login warning email
-	$GLOBALS['TYPO3_CONF_VARS']['BE']['warning_email_addr'] = 'support@ecodev.ch';
-	$GLOBALS['TYPO3_CONF_VARS']['SYS']['loginCopyrightWarrantyProvider'] = 'Ecodev Sàrl';
-	$GLOBALS['TYPO3_CONF_VARS']['SYS']['loginCopyrightWarrantyURL'] = 'http://www.ecodev.ch/';
+	$GLOBALS['TYPO3_CONF_VARS']['BE']['warning_email_addr'] = 'ian@webian.it';
+	$GLOBALS['TYPO3_CONF_VARS']['SYS']['loginCopyrightWarrantyProvider'] = '!ian';
+	$GLOBALS['TYPO3_CONF_VARS']['SYS']['loginCopyrightWarrantyURL'] = 'http://www.webian.it/';
 }
 
 // graphics settings
