@@ -39,12 +39,3 @@
 # /scripts/*
 ###########
 /scripts/Configuration.php
-
-# !ian
-.idea/
-/demo
-/htdocs/typo3temp
-/htdocs/maintemplate.html
-/htdocs/typo3conf/ext/uncache/
-/htdocs/typo3/
-/htdocs/t3lib/
