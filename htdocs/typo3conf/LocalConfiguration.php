@@ -35,6 +35,7 @@ return array(
 			'seo_basics' => 'a:2:{s:10:"xmlSitemap";s:1:"1";s:16:"sourceFormatting";s:1:"1";}',
 			'speciality' => 'a:0:{}',
 			'specialityglobal' => 'a:0:{}',
+			'specialitylocal' => 'a:0:{}',
 			'uncache' => 'a:0:{}',
 			'vhs' => 'a:0:{}',
 			'vidi' => 'a:2:{s:10:"data_types";s:18:"fe_users,fe_groups";s:11:"default_pid";s:1:"1";}',
@@ -102,6 +103,7 @@ return array(
 			'uncache',
 			'speciality',
 			'specialityglobal',
+			'specialitylocal',
 		),
 	),
 	'EXTCONF' => array(
