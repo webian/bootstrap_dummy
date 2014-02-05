@@ -58,3 +58,6 @@
 [submodule "htdocs/typo3conf/ext/specialitylocal"]
 	path = htdocs/typo3conf/ext/specialitylocal
 	url = git://github.com/webian/specialitylocal
+[submodule "htdocs/typo3_src"]
+	path = htdocs/typo3_src
+	url = git://git.typo3.org/Packages/TYPO3.CMS.git
