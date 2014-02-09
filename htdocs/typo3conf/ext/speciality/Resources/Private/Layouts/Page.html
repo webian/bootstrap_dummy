@@ -9,24 +9,27 @@
 	<f:render section="Navigation" partial="Navigation" arguments="{_all}"/>
 
 	<div class="container">
-		<v:security.allow anyBackendUser="true">
-			<div class="alert alert-success">
-				<hgroup>
-					<h1 class="alert-header">You are logged in the Backend</h1>
+		<f:if condition="{v:var.typoscript(path: 'speciality.displayTips')}">
+			<v:security.allow anyBackendUser="true">
+				<div class="alert alert-success">
+					<hgroup>
+						<h1 class="alert-header">You are logged in the Backend</h1>
 
-					<h3>Welcome to the Fluid world!</h3>
-				</hgroup>
-				<p>
-					This page is the built-in sample Fluid Pages template file being
-					rendered by <strong>EXT:fluidpages</strong> visible for BE Users only. Looks like you set things up just
-					right!
+						<h3>Welcome to the Fluid world!</h3>
+					</hgroup>
+					<p>
+						This page is the built-in sample Fluid Pages template file being
+						rendered by <strong>EXT:fluidpages</strong> visible for BE Users only. Looks like you set things up just
+						right!
 
-					This is message is not very useful as such. Just for displaying a few hints here and there... You can remove
-					me anytime from
-					file <span style=" font-size: 12px; font-family: monospace;">EXT:speciality/Resources/Private/Layouts/Page.html</span>
-				</p>
-			</div>
-		</v:security.allow>
+						This is message is not very useful as such. Just for displaying a few hints here and there... You can remove
+						me anytime from
+						file <span style=" font-size: 12px; font-family: monospace;">EXT:speciality/Resources/Private/Layouts/Page.html</span>
+						or by setting <span style=" font-size: 12px; font-family: monospace;">displayTips = 0</span> in file <span style=" font-size: 12px; font-family: monospace;">EXT:speciality/Configuration/TypoScript/Config/speciality.ts</span>
+					</p>
+				</div>
+			</v:security.allow>
+		</f:if>
 	</div>
 	<div class="container">
 		<f:render section="LanguageMenu" partial="LanguageMenu" optional="true" arguments="{_all}"/>
