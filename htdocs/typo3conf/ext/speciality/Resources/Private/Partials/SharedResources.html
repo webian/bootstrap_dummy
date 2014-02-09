@@ -25,24 +25,48 @@
 			</f:else>
 		</f:if>
 		
-		<v:asset.script name="jquery" allowMoveToFooter="false"
-		                path="EXT:speciality/Resources/Public/JavaScript/Libraries/jquery-1.9.0.min.js"/>
-		<v:asset.script name="modernizr" allowMoveToFooter="false" dependencies="jquery"
-		                path="EXT:speciality/Resources/Public/JavaScript/Libraries/modernizr-2.6.2-respond-1.1.0.min.js"/>
+		<f:if condition="{v:var.typoscript(path: 'speciality.debug_js')}">
+			<f:then>
+				<v:asset.script name="jquery" allowMoveToFooter="false"
+								path="EXT:speciality/Resources/Public/JavaScript/Libraries/jquery-1.9.0.min.js" standalone="true"/>
+				<v:asset.script name="modernizr" allowMoveToFooter="false" dependencies="jquery"
+								path="EXT:speciality/Resources/Public/JavaScript/Libraries/modernizr-2.6.2-respond-1.1.0.min.js" standalone="true"/>
 
 
-		<v:asset.script name="bootstrap-core" dependencies="jquery"
-		                path="EXT:speciality/Resources/Public/JavaScript/Libraries/bootstrap.min.js"/>
+				<v:asset.script name="bootstrap-core" dependencies="jquery"
+								path="EXT:speciality/Resources/Public/JavaScript/Libraries/bootstrap.min.js" standalone="true"/>
 
-		<v:asset.script name="jquery-colorbox" dependencies="jquery"
-		                path="EXT:jquerycolorbox/res/js/jquery.colorbox-min.js"/>
-		<v:asset.script name="jquery-colorbox-main" dependencies="jquery"
-		                path="EXT:jquerycolorbox/res/js/main.js"/>
+				<v:asset.script name="jquery-colorbox" dependencies="jquery"
+								path="EXT:jquerycolorbox/res/js/jquery.colorbox-min.js" standalone="true"/>
+				<v:asset.script name="jquery-colorbox-main" dependencies="jquery"
+								path="EXT:jquerycolorbox/res/js/main.js" standalone="true"/>
 
-		<v:asset.script name="plugin" dependencies="jquery"
-		                path="EXT:speciality/Resources/Public/JavaScript/plugins.js"/>
-		<v:asset.script name="main-js" dependencies="jquery"
-		                path="EXT:speciality/Resources/Public/JavaScript/main.js"/>
+				<v:asset.script name="plugin" dependencies="jquery"
+								path="EXT:speciality/Resources/Public/JavaScript/plugins.js" standalone="true"/>
+				<v:asset.script name="main-js" dependencies="jquery"
+								path="EXT:speciality/Resources/Public/JavaScript/main.js" standalone="true"/>
+			</f:then>
+			<f:else>
+				<v:asset.script name="jquery" allowMoveToFooter="false"
+								path="EXT:speciality/Resources/Public/JavaScript/Libraries/jquery-1.9.0.min.js"/>
+				<v:asset.script name="modernizr" allowMoveToFooter="false" dependencies="jquery"
+								path="EXT:speciality/Resources/Public/JavaScript/Libraries/modernizr-2.6.2-respond-1.1.0.min.js"/>
+
+
+				<v:asset.script name="bootstrap-core" dependencies="jquery"
+								path="EXT:speciality/Resources/Public/JavaScript/Libraries/bootstrap.min.js"/>
+
+				<v:asset.script name="jquery-colorbox" dependencies="jquery"
+								path="EXT:jquerycolorbox/res/js/jquery.colorbox-min.js"/>
+				<v:asset.script name="jquery-colorbox-main" dependencies="jquery"
+								path="EXT:jquerycolorbox/res/js/main.js"/>
+
+				<v:asset.script name="plugin" dependencies="jquery"
+								path="EXT:speciality/Resources/Public/JavaScript/plugins.js"/>
+				<v:asset.script name="main-js" dependencies="jquery"
+								path="EXT:speciality/Resources/Public/JavaScript/main.js"/>
+			</f:else>
+		</f:if>
 
 	</f:section>
 
