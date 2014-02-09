@@ -44,7 +44,7 @@
 			<!-- /sitemap-->
 
 
-			<small>
+			<f:if condition="{v:var.typoscript(path: 'speciality.displayTips')}">
 				<v:security.allow anyBackendUser="TRUE">
 					<div class="alert alert-success">
 						<p>
@@ -55,7 +55,7 @@
 						</p>
 					</div>
 				</v:security.allow>
-			</small>
+			</f:if>
 
 			<small>
 				<f:cObject typoscriptObjectPath="lib.footer"/>
