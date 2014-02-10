@@ -104,7 +104,6 @@ return array(
 			'uncache',
 			't3jquery',
 			'speciality',
-			'specialityglobal',
 			'specialitylocal',
 		),
 	),
