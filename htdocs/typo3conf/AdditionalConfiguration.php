@@ -117,4 +117,10 @@ if (FALSE) {
 	$GLOBALS['TYPO3_CONF_VARS']['FE']['tidy_path'] = 'tidy -i --quiet true --tidy-mark true -wrap 0 -utf8 --output-xhtml true';
 }
 
+// Include AdditionalConfigurationOverwrite.php if exists. Used to overwrite its configurations locally on websites.
+$additionalConfigurationOverwriteFile = PATH_site . 'typo3conf/AdditionalConfigurationOverwrite.php';
+if (file_exists($additionalConfigurationOverwriteFile)) {
+	require_once ($additionalConfigurationOverwriteFile);
+}
+
 ?>
