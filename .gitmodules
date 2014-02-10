@@ -52,9 +52,6 @@
 [submodule "htdocs/typo3conf/ext/extension_builder"]
 	path = htdocs/typo3conf/ext/extension_builder
 	url = git://github.com/TYPO3-extensions/extension_builder.git
-[submodule "htdocs/typo3conf/ext/specialityglobal"]
-	path = htdocs/typo3conf/ext/specialityglobal
-	url = git://github.com/webian/specialityglobal
 [submodule "htdocs/typo3conf/ext/specialitylocal"]
 	path = htdocs/typo3conf/ext/specialitylocal
 	url = git://github.com/webian/specialitylocal
