@@ -177,7 +177,6 @@ return array(
 	),
 	'SYS' => array(
 		'compat_version' => '6.1',
-		'sitename' => 'Dummy',
 	),
 );
 ?>
