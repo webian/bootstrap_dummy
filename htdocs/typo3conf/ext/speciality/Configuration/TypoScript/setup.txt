@@ -27,3 +27,8 @@
 ## Page
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:speciality/Configuration/TypoScript/Page/header.ts">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:speciality/Configuration/TypoScript/Page/page.ts">
+
+speciality {
+	# Switch to show/hide FE tips for a logged in BE user.
+	displayTips = 0
+}
