@@ -1,8 +1,8 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:speciality/Configuration/TsConfig/Page/rte.ts">
 
 mod.SHARED {
-  defaultLanguageFlag = gb.gif
-  defaultLanguageLabel = English
+  defaultLanguageFlag = it.gif
+  defaultLanguageLabel = Italiano
 }
 
 # PAGE DEFAULT PERMISSIONS
