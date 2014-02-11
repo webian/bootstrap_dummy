@@ -7,9 +7,9 @@
 # !!! since it is not possible to use variable in TS expect than with constants
 config {
 	sys_language_uid = 0
-	language = en
-	locale_all = en_GB.UTF-8
-	htmlTag_langKey = en_GB
+	language = it
+	locale_all = it_IT.UTF-8
+	htmlTag_langKey = it_IT
 }
 
 [globalVar = GP:L = 1]
@@ -27,6 +27,15 @@ config {
 		language = de
 		locale_all = de_DE.UTF-8
 		htmlTag_langKey = de_DE
+	}
+[end]
+
+[globalVar = GP:L = 3]
+	config {
+		sys_language_uid = 3
+		language = en
+		locale_all = en_GB.UTF-8
+		htmlTag_langKey = en_GB
 	}
 [end]
 
