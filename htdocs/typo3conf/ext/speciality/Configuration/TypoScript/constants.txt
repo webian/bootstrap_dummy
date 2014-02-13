@@ -15,6 +15,9 @@ config {
 
 	# cat=site-configuration/content/0151; type=int; label= Enable the Index Search extension to index file
 	index_externals = 0
+
+	# cat=site-configuration/content/0160; type=int; label= Navbar style (0 default - 1 navbar-fixed-top - 2 navbar-fixed-bottom - 3 navbar-static-top)
+	navStyle = 0
 }
 
 styles.content {
