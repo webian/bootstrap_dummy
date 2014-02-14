@@ -44,56 +44,32 @@
                 DummySiteName
             </a>
         </div>
-        <div class="navbar-collapse collapse">
+        <div class="navbar-collapse collapse align-right">
             <ul class="nav navbar-nav">
                 <li class="sub">
-                    <a tabindex="11"
-                       href="/51/"
-                       data-placement="bottom"
-                       title=""
-                       class="sub">About TYPO3</a>
+                    <a tabindex="11" href="/51/" data-placement="bottom" title="" class="sub" data-original-title="">About TYPO3</a>
                 </li>
                 <li class="">
-                    <a tabindex="12"
-                       href="/57/"
-                       data-placement="bottom"
-                       title="Some tips for your editor users."
-                       class="">For Editors</a>
+                    <a tabindex="12" href="/57/" data-placement="bottom" title="" class="" data-original-title="Some tips for your editor users.">For Editors</a>
+                </li>
+                <li class="sub">
+                    <a tabindex="13" href="/64/" data-placement="bottom" title="" class="sub" data-original-title="A collection of helper pages like mini tutorial for going the next steps.">For Integrators</a>
+                </li>
+                <li class="sub">
+                    <a tabindex="14" href="/4/" data-placement="bottom" title="" class="sub" data-original-title="Default content elements which are available out of the box.">Examples</a>
+                </li>
+                <li class="sub">
+                    <a tabindex="15" href="/110/" data-placement="bottom" title="" class="sub" data-original-title="Content elements &quot;extended&quot; provided by third-party extensions.">Examples extended</a>
+                </li>
+                <li class="">
+                    <a tabindex="16" href="/109/" data-placement="bottom" title="" class="" data-original-title="">Changelog</a>
                 </li>
             </ul>
             <div class="btn-group navbar-form navbar-right">
-                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-globe"></span></button>
-                <ul class="dropdown-menu">
-                    <li class="current first" ><a href="/">English</a></li>
-                    <li><a href="/1/?L=1">French</a></li>
-                    <li class="last" ><a href="/1/?L=2">German</a></li>
-                </ul>
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target=".search-form"><span class="glyphicon glyphicon-search"></span></button>
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target=".language-selection"><span class="glyphicon glyphicon-globe"></span></button>
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target=".login-form"><span class="glyphicon glyphicon-user"></span></button>
             </div>
-            <form action="/17/" method="post" class="navbar-form navbar-right" role="search">
-                <input type="hidden" name="tx_indexedsearch[_sections]" value="0">
-                <input type="hidden" name="tx_indexedsearch[_freeIndexUid]" id="tx_indexedsearch_freeIndexUid" value="_">
-                <input type="hidden" name="tx_indexedsearch[pointer]" id="tx_indexedsearch_pointer" value="0">
-                <input type="hidden" name="tx_indexedsearch[ext]" value="">
-                <input type="hidden" name="tx_indexedsearch[type]" value="0">
-                <input type="hidden" name="tx_indexedsearch[defOp]" value="0">
-                <input type="hidden" name="tx_indexedsearch[media]" value="-1">
-                <input type="hidden" name="tx_indexedsearch[order]" value="rank_flag">
-                <input type="hidden" name="tx_indexedsearch[group]" value="sections">
-                <input type="hidden" name="tx_indexedsearch[lang]" value="-1">
-                <input type="hidden" name="tx_indexedsearch[desc]" value="0">
-                <input type="hidden" name="tx_indexedsearch[results]" value="10">
-                <div class="input-group">
-                    <div class="input-group">
-							<span class="input-group-addon">
-							<span class="glyphicon glyphicon-search"></span>
-							</span>
-                        <input class="form-control input" type="text"
-                               name="tx_indexedsearch[sword]" value=""
-                               placeholder="Search...">
-                    </div>
-                </div>
-            </form>
         </div>
         <!--/.nav-collapse -->
     </div>
@@ -455,6 +431,84 @@
 </footer>
 </div>
 </div>
+<div class="modal fade search-form" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Search</h4>
+            </div>
+            <div class="modal-body">
+                <form action="/17/" method="post" role="search">
+                    <input type="hidden" name="tx_indexedsearch[_sections]" value="0">
+                    <input type="hidden" name="tx_indexedsearch[_freeIndexUid]" id="tx_indexedsearch_freeIndexUid" value="_">
+                    <input type="hidden" name="tx_indexedsearch[pointer]" id="tx_indexedsearch_pointer" value="0">
+                    <input type="hidden" name="tx_indexedsearch[ext]" value="">
+                    <input type="hidden" name="tx_indexedsearch[type]" value="0">
+                    <input type="hidden" name="tx_indexedsearch[defOp]" value="0">
+                    <input type="hidden" name="tx_indexedsearch[media]" value="-1">
+                    <input type="hidden" name="tx_indexedsearch[order]" value="rank_flag">
+                    <input type="hidden" name="tx_indexedsearch[group]" value="sections">
+                    <input type="hidden" name="tx_indexedsearch[lang]" value="-1">
+                    <input type="hidden" name="tx_indexedsearch[desc]" value="0">
+                    <input type="hidden" name="tx_indexedsearch[results]" value="10">
+                    <input type="text" class="form-control" name="tx_indexedsearch[sword]" value="" placeholder="Words to search">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Search</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<div class="modal fade language-selection" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Languages</h4>
+            </div>
+            <div class="modal-body">
+                <ul class="list-unstyled">
+                    <li class="current first bg-info">Italiano</li>
+                    <li><a href="/1/?L=3">English</a></li>
+                    <li><a href="/1/?L=1">Français</a></li>
+                    <li><a href="/1/?L=4">Español</a></li>
+                    <li class="text-muted">Português</li>
+                    <li class="last" ><a href="/1/?L=2">Deutsch</a></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<div class="modal fade login-form" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Please sign in</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-signin" role="form">
+                    <input type="email" class="form-control" placeholder="Email address" required autofocus>
+                    <input type="password" class="form-control" placeholder="Password" required>
+                    <label class="checkbox">
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 <script type="text/javascript">var _gaq = [['_setAccount', 'UA-XXXXX-X'],['_trackPageview']];(function (d, t) {var g = d.createElement(t), s = d.getElementsByTagName(t)[0];g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';s.parentNode.insertBefore(g, s)}(document, 'script'));</script>
 <script type="text/javascript" src="/typo3temp/vhs-assets-bootstrap-core.js?1392298514"></script>
 <script type="text/javascript" src="/typo3temp/vhs-assets-jquery-colorbox.js?1392298514"></script>
