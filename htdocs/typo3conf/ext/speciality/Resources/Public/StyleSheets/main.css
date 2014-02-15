@@ -329,3 +329,26 @@ ul.browsebox li {
 .tx-indexedsearch-whatis {
 	display: none;
 }
+
+/* Dummy global customization
+-------------------------------------------------- */
+BODY
+{
+    color: #666;
+    background-color: #F9F9F9;
+}
+
+/* remove rounded corners */
+.btn, .form-control, .input-group-addon, .modal-content, .alert {	border-radius: 0; }
+
+.utility-caller { padding-right: 0 }
+
+/* bootstrap-theme reset */
+.navbar-default {
+    background-image: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+}
+/* bootstrap-theme reset <end> */
+
