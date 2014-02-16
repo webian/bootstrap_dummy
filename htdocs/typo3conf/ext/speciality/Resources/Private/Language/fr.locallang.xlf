@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
 	<file source-language="en" datatype="plaintext" original="messages" date="2012-10-17T17:55:17Z"
-		  product-name="ext-speciality" target-language="fr">
+		  product-name="speciality" target-language="fr">
 		<header/>
 		<body>
 			<trans-unit id="lead-text">
@@ -12,6 +12,51 @@
 				<source>Tip: clear the cache in the Backend after editing a label in:</source>
 				<target state="translated">Nettoyer le cache de langue dans le Backend après édition de</target>
 			</trans-unit>
-		</body>
+
+            <trans-unit id="close">
+                <source>Close</source>
+                <target state="translated">Fermer</target>
+            </trans-unit>
+
+            <trans-unit id="search-title">
+                <source>Search</source>
+                <target state="translated">Recherche</target>
+            </trans-unit>
+            <trans-unit id="search">
+                <source>Search</source>
+                <target state="translated">Trouvez</target>
+            </trans-unit>
+            <trans-unit id="search-placeholder">
+                <source>Words to search...</source>
+                <target state="translated">Mots à chercher...</target>
+            </trans-unit>
+
+            <trans-unit id="languages-title">
+                <source>Languages</source>
+                <target state="translated">Langue</target>
+            </trans-unit>
+
+            <trans-unit id="signin-title">
+                <source>Please sign in</source>
+                <target state="translated">Entrer</target>
+            </trans-unit>
+            <trans-unit id="signin-email-placeholder">
+                <source>E-mail address...</source>
+                <target state="translated">Adresse électronique...</target>
+            </trans-unit>
+            <trans-unit id="signin-password-placeholder">
+                <source>Password...</source>
+                <target state="translated">Mot de passe...</target>
+            </trans-unit>
+            <trans-unit id="signin-remember-me">
+                <source>Remember me</source>
+                <target state="translated">Garder ma session active</target>
+            </trans-unit>
+            <trans-unit id="signin-btn">
+                <source>Sign in</source>
+                <target state="translated">Connexion</target>
+            </trans-unit>
+
+        </body>
 	</file>
 </xliff>
