@@ -332,23 +332,30 @@ ul.browsebox li {
 
 /* Dummy global customization
 -------------------------------------------------- */
-BODY
-{
-    color: #666;
-    background-color: #F9F9F9;
-}
+
+/* bootstrap color for default button is too dark, this makes it lighter */
+.btn-default { color: #888 }
 
 /* remove rounded corners */
-.btn, .form-control, .input-group-addon, .modal-content, .alert {	border-radius: 0; }
+/*.navbar-toggle, .form-control, .input-group-addon, .modal-content, .alert {	border-radius: 0; }*/
 
-.utility-caller { padding-right: 0 }
-
-/* bootstrap-theme reset */
-.navbar-default {
-    background-image: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: 0;
+@media (min-width: 768px) {
+    .utility-caller { padding-right: 0 } /* align utility buttons to right margin for large screens */
 }
-/* bootstrap-theme reset <end> */
 
+/* no top border and set back color for navbar */
+.navbar-default { border-color: transparent; background-color: #e7e7e7 }
+/* menu toggle */
+.navbar-default .navbar-toggle { background-color: #fff; border-color: #ccc }
+/* no top border for menu when navbar collapsed */
+.navbar-collapse { border-top-color: transparent }
+/* no border for utility buttons (visible in small screen) */
+.navbar-form { border-color: transparent }
+
+/* sign-in <start> */
+.form-signin .checkbox { font-weight: normal }
+.form-signin .form-control { position: relative /* needed for z-index to work on focus */ }
+.form-signin .form-control:focus { z-index: 2 }
+.form-signin input[type="email"] { margin-bottom: -1px; border-bottom-right-radius: 0; border-bottom-left-radius: 0; }
+.form-signin input[type="password"] { border-top-left-radius: 0; border-top-right-radius: 0; }
+/* sign-in <start> */
