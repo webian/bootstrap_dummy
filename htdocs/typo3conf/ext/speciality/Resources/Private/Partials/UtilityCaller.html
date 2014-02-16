@@ -1,0 +1,14 @@
+{namespace v=Tx_Vhs_ViewHelpers}
+<f:layout name="Page"/>
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+
+	<!-- @todo find a better way for generating the form such a plugin -->
+	<f:section name="UtilityCaller">
+        <div class="btn-group navbar-form navbar-right utility-caller">
+            <button type="button" class="btn btn-default call-search-form" data-toggle="modal" data-target=".search-form"><span class="glyphicon glyphicon-search"></span></button>
+            <button type="button" class="btn btn-default call-language-selection" data-toggle="modal" data-target=".language-selection"><span class="glyphicon glyphicon-globe"></span></button>
+            <button type="button" class="btn btn-default call-login-form" data-toggle="modal" data-target=".login-form"><span class="glyphicon glyphicon-user"></span></button>
+        </div>
+    </f:section>
+</div>
