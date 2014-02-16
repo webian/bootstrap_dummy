@@ -5,8 +5,9 @@
      xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
 
 	<f:section name="LanguageMenu">
-		<v:page.languageMenu hideNotTranslated="1" order="0,1,2" class="list-inline" defaultLanguageLabel="English"
-		                     defaultIsoFlag="gb"/>
+        <!-- @TODO: no link for current and notTrasleted; classInactive="text-muted" -->
+		<v:page.languageMenu hideNotTranslated="{v:var.typoscript(path: 'lib.LanguageMenu.hideNotTranslated')}" order="{v:var.typoscript(path: 'lib.LanguageMenu.order')}"
+                             class="list-unstyled" defaultLanguageLabel="Italiano" defaultIsoFlag="it" layout="name" classCurrent="current bg-info" />
 	</f:section>
 
 </div>
