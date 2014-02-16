@@ -9,7 +9,6 @@
 		<f:if condition="{v:var.typoscript(path: 'speciality.debug_css')}">
 			<f:then>
 				<v:asset.style name="bootstrap" path="EXT:speciality/Resources/Public/StyleSheets/bootstrap.css" standalone="true"/>
-				<v:asset.style name="bootstrap-theme" path="EXT:speciality/Resources/Public/StyleSheets/bootstrap-theme.css" standalone="true"/>
 				<v:asset.style name="font-awesome" dependencies="bootstrap" path="EXT:speciality/Resources/Public/StyleSheets/font-awesome.css" standalone="true"/>
 				<v:asset.style name="main-css" dependencies="bootstrap" path="EXT:speciality/Resources/Public/StyleSheets/main.css" standalone="true"/>
 				<v:asset.style name="rte" dependencies="bootstrap" path="EXT:speciality/Resources/Public/StyleSheets/rte.css" standalone="true"/>
@@ -18,7 +17,6 @@
 			</f:then>
 			<f:else>
 				<v:asset.style name="bootstrap" path="EXT:speciality/Resources/Public/StyleSheets/bootstrap.min.css"/>
-				<v:asset.style name="bootstrap-theme" path="EXT:speciality/Resources/Public/StyleSheets/bootstrap-theme.min.css"/>
 				<v:asset.style name="font-awesome" dependencies="bootstrap" path="EXT:speciality/Resources/Public/StyleSheets/font-awesome.min.css"/>
 				<v:asset.style name="main-css" dependencies="bootstrap" path="EXT:speciality/Resources/Public/StyleSheets/main.css"/>
 				<v:asset.style name="rte" dependencies="bootstrap" path="EXT:speciality/Resources/Public/StyleSheets/rte.css"/>
