@@ -333,6 +333,9 @@ ul.browsebox li {
 /* Dummy global customization
 -------------------------------------------------- */
 
+/* Reset above rule 'Give room to main block elements for anchor links' since seems not useful */
+aside[role=complementary] > div.csc-default, div[role=section] > div.csc-default{ padding-top: 0; }
+
 /* class to remove side padding */
 .no-side-padding { padding-left: 0; padding-right: 0}
 
