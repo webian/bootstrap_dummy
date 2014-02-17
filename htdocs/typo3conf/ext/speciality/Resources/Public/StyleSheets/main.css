@@ -365,3 +365,5 @@ ul.browsebox li {
 
 /* the image of a item in the carousel must take all side space */
 .carousel-inner > .item > img { width: 100% }
+/* no ugly text-shadow in caption of carousel */
+.carousel-caption { text-shadow: none }
