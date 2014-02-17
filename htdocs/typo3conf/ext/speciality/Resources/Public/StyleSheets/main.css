@@ -352,6 +352,11 @@ H1, H2, H3, H4, .navbar-brand, .main-menu LI A, .btn { font-family: Alternative0
 /* Overwrite above rule 'Give room to main block elements for anchor links' since seems not useful */
 aside[role=complementary] > div.csc-default, div[role=section] > div.csc-default{ padding-top: 0; }
 
+/* Make main menu a little bigger than the default font */
+.main-menu > li > a { font-size: 16px }
+/* Headers customization */
+h1,.h1 { font-size: 30px;} h2,.h2 { font-size: 24px;} h3,.h3 { font-size: 20px;} h4,.h4 { font-size: 16px;} h5,.h5 { font-size: 14px;} h6,.h6 { font-size: 12px;}
+
 /* class to remove side padding */
 .no-side-padding { padding-left: 0; padding-right: 0}
 
