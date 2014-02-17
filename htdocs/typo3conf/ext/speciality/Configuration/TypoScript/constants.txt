@@ -18,6 +18,9 @@ config {
 
 	# cat=site-configuration/content/0160; type=int; label= Navbar style (0 default - 1 navbar-fixed-top - 2 navbar-fixed-bottom - 3 navbar-static-top)
 	navStyle = 0
+
+	# cat=site-configuration/content/0170; type=int; label= Header container type (0 fixed-width - 1 full-width)
+	headerContainerType = 0
 }
 
 styles.content {

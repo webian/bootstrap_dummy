@@ -8,7 +8,7 @@
 
 	<f:render section="Navigation" partial="Navigation" arguments="{_all}"/>
 
-    <div class="container">
+    <div class="<f:cObject typoscriptObjectPath='lib.header.containerType'/>">
         <f:render section="Header" partial="Header" optional="true" arguments="{_all}"/>
     </div>
 
