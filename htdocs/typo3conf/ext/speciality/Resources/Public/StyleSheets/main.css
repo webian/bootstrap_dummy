@@ -383,6 +383,7 @@ h1,.h1 { font-size: 30px;} h2,.h2 { font-size: 24px;} h3,.h3 { font-size: 20px;}
 .navbar-default .navbar-form { border-color: transparent }
 
 /* Logo <start> */
+    .navbar-brand { font-size: 20px; font-weight: bold }
     @media (min-width: 768px) {
         .navbar > .container .navbar-brand.imgLogo {
             margin-left: 0; /* No left margin if logo image in wide-screen */
