@@ -15,6 +15,14 @@ lib.navbar {
 		3 = TEXT
 		3.value = navbar-static-top
 	}
+	imgLogo = CASE
+	imgLogo {
+		key = {$config.imgLogo}
+		default = TEXT
+		default.value =
+		1 = TEXT
+		1.value = imgLogo
+	}
 }
 
 ###################################################
