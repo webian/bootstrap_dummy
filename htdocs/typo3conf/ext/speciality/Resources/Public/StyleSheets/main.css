@@ -333,6 +333,18 @@ ul.browsebox li {
 /* Dummy global customization
 -------------------------------------------------- */
 
+@font-face {
+    font-family: 'Normal01';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v7/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+    font-family: 'Alternative01';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://themes.googleusercontent.com/static/fonts/opensanscondensed/v7/gk5FxslNkTTHtojXrkp-xF1YPouZEKgzpqZW9wN-3Ek.woff) format('woff');
+}
 /* Reset above rule 'Give room to main block elements for anchor links' since seems not useful */
 aside[role=complementary] > div.csc-default, div[role=section] > div.csc-default{ padding-top: 0; }
 
