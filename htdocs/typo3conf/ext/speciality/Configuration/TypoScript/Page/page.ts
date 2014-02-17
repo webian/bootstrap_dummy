@@ -8,9 +8,10 @@
 page {
 	# enhanced body with class="page-x"
 	bodyTag >
-	bodyTagCObject = TEXT
-	bodyTagCObject.field = uid
-	bodyTagCObject.wrap = <body class="page-|">
+
+	# body is from bodyTag.ts
+	bodyTagCObject < body
+
     adminPanelStyles = 0
 }
 
