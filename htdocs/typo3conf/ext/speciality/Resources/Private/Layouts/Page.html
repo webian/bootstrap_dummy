@@ -8,8 +8,11 @@
 
 	<f:render section="Navigation" partial="Navigation" arguments="{_all}"/>
 
+    <div class="container">
+        <f:render section="Header" partial="Header" optional="true" arguments="{_all}"/>
+    </div>
+
 	<div class="container">
-		<f:render section="Header" partial="Header" optional="true" arguments="{_all}"/>
 		<f:render section="Breadcrumb" partial="Breadcrumb" optional="true" arguments="{_all}"/>
 		<f:render section="HeroUnit" partial="HeroUnit" optional="true" arguments="{_all}"/>
 
