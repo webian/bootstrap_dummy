@@ -362,7 +362,7 @@ aside[role=complementary] > div.csc-default, div[role=section] > div.csc-default
 }
 
 /* no top border and set back color for navbar */
-.navbar-default { border-color: transparent; background-color: #e7e7e7 }
+.navbar-default { border-color: transparent; }
 /* menu toggle */
 .navbar-default .navbar-toggle { background-color: #fff; border-color: #ccc }
 /* no border for menu when navbar collapsed */
