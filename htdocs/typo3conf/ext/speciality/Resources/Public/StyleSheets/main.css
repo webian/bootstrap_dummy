@@ -407,6 +407,8 @@ aside[role=complementary] > div.csc-default, div[role=section] > div.csc-default
     .form-signin input[type="password"] { border-top-left-radius: 0; border-top-right-radius: 0; }
 /* sign-in <start> */
 
+/* add some margin under carousel if in contentHeader */
+.contentHeader .carousel { margin-bottom: 30px }
 /* the image of a item in the carousel must take all side space */
 .carousel-inner > .item > img { width: 100% }
 /* no ugly text-shadow in caption of carousel */
