@@ -1,0 +1,18 @@
+{namespace v=Tx_Vhs_ViewHelpers}
+<f:layout name="Page"/>
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:v="http://fedext.net/ns/vhs/ViewHelpers"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+
+    <f:section name="SigninForm">
+        <form class="form-signin" role="form">
+            <input type="email" class="form-control" placeholder="<f:translate key="signin-email-placeholder" extensionName="speciality"/>" required autofocus>
+            <input type="password" class="form-control" placeholder="<f:translate key="signin-password-placeholder" extensionName="speciality"/>" required>
+            <label class="checkbox">
+                <input type="checkbox" value="remember-me"> <f:translate key="signin-remember-me" extensionName="speciality"/>
+            </label>
+            <button class="btn btn-primary btn-block" type="submit"><f:translate key="signin-btn" extensionName="speciality"/></button>
+        </form>
+    </f:section>
+
+</div>

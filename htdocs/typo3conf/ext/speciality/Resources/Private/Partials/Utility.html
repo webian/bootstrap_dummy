@@ -1,0 +1,66 @@
+{namespace v=Tx_Vhs_ViewHelpers}
+<f:layout name="Page"/>
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+
+	<!-- @todo find a better way for generating the form such a plugin -->
+	<f:section name="Utility">
+        <div class="modal fade search-form" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"><f:translate key="search-title" extensionName="speciality"/></h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="{f:uri.page(pageUid:17)}" method="post" role="search">
+                            <input type="hidden" name="tx_indexedsearch[_sections]" value="0">
+                            <input type="hidden" name="tx_indexedsearch[_freeIndexUid]" id="tx_indexedsearch_freeIndexUid" value="_">
+                            <input type="hidden" name="tx_indexedsearch[pointer]" id="tx_indexedsearch_pointer" value="0">
+                            <input type="hidden" name="tx_indexedsearch[ext]" value="">
+                            <input type="hidden" name="tx_indexedsearch[type]" value="0">
+                            <input type="hidden" name="tx_indexedsearch[defOp]" value="0">
+                            <input type="hidden" name="tx_indexedsearch[media]" value="-1">
+                            <input type="hidden" name="tx_indexedsearch[order]" value="rank_flag">
+                            <input type="hidden" name="tx_indexedsearch[group]" value="sections">
+                            <input type="hidden" name="tx_indexedsearch[lang]" value="-1">
+                            <input type="hidden" name="tx_indexedsearch[desc]" value="0">
+                            <input type="hidden" name="tx_indexedsearch[results]" value="10">
+                            <input type="text" class="form-control" name="tx_indexedsearch[sword]" value="" placeholder="<f:translate key="search-placeholder" extensionName="speciality"/>">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><f:translate key="close" extensionName="speciality"/></button>
+                        <button type="button" class="btn btn-primary"><f:translate key="search" extensionName="speciality"/></button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div class="modal fade language-selection" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"><f:translate key="languages-title" extensionName="speciality"/></h4>
+                    </div>
+                    <div class="modal-body">
+                        <f:render section="LanguageMenu" partial="LanguageMenu" optional="true" arguments="{_all}"/>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div class="modal fade login-form" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"><f:translate key="signin-title" extensionName="speciality"/></h4>
+                    </div>
+                    <div class="modal-body">
+                        <f:render section="SigninForm" partial="SigninForm" optional="true" arguments="{_all}"/>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+    </f:section>
+</div>

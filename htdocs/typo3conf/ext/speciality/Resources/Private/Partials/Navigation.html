@@ -18,7 +18,7 @@
 						<v:site.name/>
 					</a>
 				</div>
-				<div class="navbar-collapse collapse">
+				<div class="navbar-collapse collapse align-right">
 					<v:page.menu entryLevel="{v:var.typoscript(path: 'lib.menu.main.entryLevel')}">
 						<ul class="nav navbar-nav">
 							<f:for each="{menu}" as="mainPage" iteration="iteration">
@@ -33,8 +33,7 @@
 						</ul>
 					</v:page.menu>
 
-					<f:render section="SearchForm" partial="SearchForm" optional="true" arguments="{_all}"/>
-                    <f:render section="LanguageMenu" partial="LanguageMenu" optional="true" arguments="{_all}"/>
+					<f:render section="UtilityCaller" partial="UtilityCaller" optional="true" arguments="{_all}"/>
                 </div>
 				<!--/.nav-collapse -->
 			</div>

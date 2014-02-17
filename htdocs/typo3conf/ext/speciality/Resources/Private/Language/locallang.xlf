@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
 	<file source-language="en" datatype="plaintext" original="messages" date="2012-10-17T17:55:17Z"
-	      product-name="ext-speciality">
+	      product-name="speciality">
 		<header/>
 		<body>
 
@@ -45,6 +45,41 @@
 			<trans-unit id="lead-text-tip">
 				<source>Tip: clear the language cache in the Backend after editing a label in</source>
 			</trans-unit>
-		</body>
+
+            <trans-unit id="close">
+                <source>Close</source>
+            </trans-unit>
+
+            <trans-unit id="search-title">
+                <source>Search</source>
+            </trans-unit>
+            <trans-unit id="search">
+                <source>Search</source>
+            </trans-unit>
+            <trans-unit id="search-placeholder">
+                <source>Words to search...</source>
+            </trans-unit>
+
+            <trans-unit id="languages-title">
+                <source>Languages</source>
+            </trans-unit>
+
+            <trans-unit id="signin-title">
+                <source>Please sign in</source>
+            </trans-unit>
+            <trans-unit id="signin-email-placeholder">
+                <source>E-mail address...</source>
+            </trans-unit>
+            <trans-unit id="signin-password-placeholder">
+                <source>Password...</source>
+            </trans-unit>
+            <trans-unit id="signin-remember-me">
+                <source>Remember me</source>
+            </trans-unit>
+            <trans-unit id="signin-btn">
+                <source>Sign in</source>
+            </trans-unit>
+
+        </body>
 	</file>
 </xliff>
