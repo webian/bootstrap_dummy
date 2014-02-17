@@ -350,10 +350,10 @@ ul.browsebox li {
 .navbar-default { border-color: transparent; background-color: #e7e7e7 }
 /* menu toggle */
 .navbar-default .navbar-toggle { background-color: #fff; border-color: #ccc }
-/* no top border for menu when navbar collapsed */
-.navbar-collapse { border-top-color: transparent }
+/* no border for menu when navbar collapsed */
+.navbar-default .navbar-collapse { border-color: transparent }
 /* no border for utility buttons (visible in small screen) */
-.navbar-form { border-color: transparent }
+.navbar-default .navbar-form { border-color: transparent }
 
 /* sign-in <start> */
 .form-signin .checkbox { font-weight: normal }
