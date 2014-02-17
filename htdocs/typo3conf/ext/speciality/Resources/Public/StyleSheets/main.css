@@ -362,3 +362,6 @@ ul.browsebox li {
 .form-signin input[type="email"] { margin-bottom: -1px; border-bottom-right-radius: 0; border-bottom-left-radius: 0; }
 .form-signin input[type="password"] { border-top-left-radius: 0; border-top-right-radius: 0; }
 /* sign-in <start> */
+
+/* the image of a item in the carousel must take all side space */
+.carousel-inner > .item > img { width: 100% }
