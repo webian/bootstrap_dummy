@@ -345,7 +345,7 @@ ul.browsebox li {
     font-weight: 300;
     src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://themes.googleusercontent.com/static/fonts/opensanscondensed/v7/gk5FxslNkTTHtojXrkp-xF1YPouZEKgzpqZW9wN-3Ek.woff) format('woff');
 }
-/* Reset above rule 'Give room to main block elements for anchor links' since seems not useful */
+/* Overwrite above rule 'Give room to main block elements for anchor links' since seems not useful */
 aside[role=complementary] > div.csc-default, div[role=section] > div.csc-default{ padding-top: 0; }
 
 /* class to remove side padding */
