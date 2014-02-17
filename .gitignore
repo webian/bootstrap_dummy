@@ -17,6 +17,7 @@
 # /htdocs/*
 ###########
 /htdocs/nbproject
+/htdocs/test.html
 /htdocs/typo3temp*
 
 ###########
