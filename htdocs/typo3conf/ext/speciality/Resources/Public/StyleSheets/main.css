@@ -333,6 +333,9 @@ ul.browsebox li {
 /* Dummy global customization
 -------------------------------------------------- */
 
+/* class to remove side padding */
+.no-side-padding { padding-left: 0; padding-right: 0}
+
 /* bootstrap color for default button is too dark, this makes it lighter */
 .btn-default { color: #888 }
 
