@@ -425,7 +425,7 @@ h1,.h1 { font-size: 30px;} h2,.h2 { font-size: 24px;} h3,.h3 { font-size: 20px;}
 /* the image of a item in the carousel must take all side space */
 .carousel-inner > .item > img { width: 100% }
 /* no ugly text-shadow in caption of carousel */
-.carousel-caption { text-shadow: none }
+/*.carousel-caption { text-shadow: none }*/
 .carousel-control { width:25% }
 .carousel-control .icon-prev, .carousel-control .icon-next { font-family: Alternative01, Arial, Helvetica, sans-serif }
 .carousel-control .icon-prev:before { content: '\003c'; } /* less-than sign */
