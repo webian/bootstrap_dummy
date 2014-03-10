@@ -430,3 +430,5 @@ h1,.h1 { font-size: 30px;} h2,.h2 { font-size: 24px;} h3,.h3 { font-size: 20px;}
 .carousel-control .icon-prev, .carousel-control .icon-next { font-family: Alternative01, Arial, Helvetica, sans-serif }
 .carousel-control .icon-prev:before { content: '\003c'; } /* less-than sign */
 .carousel-control .icon-next:before { content: '\003e'; } /* more-than sign */
+@media screen and (min-width: 768px) { .carousel-indicators { bottom: 30px; } }
+@media screen and (min-width: 768px) { .carousel-caption { bottom: -25px } }
