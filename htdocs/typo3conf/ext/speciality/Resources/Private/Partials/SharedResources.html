@@ -45,6 +45,8 @@
 								path="EXT:speciality/Resources/Public/JavaScript/plugins.js" standalone="true"/>
 				<v:asset.script name="main-js" dependencies="jquery"
 								path="EXT:speciality/Resources/Public/JavaScript/main.js" standalone="true"/>
+				<v:asset.script name="local-js" dependencies="jquery"
+								path="EXT:specialitylocal/Resources/Public/JavaScript/local.js" standalone="true"/>
 			</f:then>
 			<f:else>
 				<v:asset.script name="jquery" allowMoveToFooter="false"
@@ -65,6 +67,8 @@
 								path="EXT:speciality/Resources/Public/JavaScript/plugins.js"/>
 				<v:asset.script name="main-js" dependencies="jquery"
 								path="EXT:speciality/Resources/Public/JavaScript/main.js"/>
+                <v:asset.script name="local-js" dependencies="jquery"
+                                path="EXT:specialitylocal/Resources/Public/JavaScript/local.js"/>
 			</f:else>
 		</f:if>
 
