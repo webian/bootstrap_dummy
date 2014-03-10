@@ -64,3 +64,6 @@
 [submodule "htdocs/typo3conf/ext/t3jquery"]
 	path = htdocs/typo3conf/ext/t3jquery
 	url = git@github.com:TYPO3-svn-archive/t3jquery.git
+[submodule "htdocs/typo3conf/ext/iancontent"]
+	path = htdocs/typo3conf/ext/iancontent
+	url = git@bitbucket.org:ianxxx/iancontent.git
