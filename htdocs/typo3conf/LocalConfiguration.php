@@ -14,6 +14,7 @@ return array(
 	'EXT' => array(
 		'extConf' => array(
 			'builder' => 'a:0:{}',
+			'coreapi' => 'a:0:{}',
 			'extension_builder' => 'a:3:{s:15:"enableRoundtrip";s:0:"";s:15:"backupExtension";s:1:"1";s:9:"backupDir";s:35:"uploads/tx_extensionbuilder/backups";}',
 			'fluidcontent' => 'a:1:{s:9:"removeTab";s:1:"1";}',
 			'fluidcontent_bootstrap' => 'a:0:{}',
@@ -104,6 +105,7 @@ return array(
 			'extension_builder',
 			't3jquery',
 			'builder',
+			'coreapi',
 			'speciality',
 			'specialitylocal',
 		),
