@@ -17,6 +17,7 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tstemplate.php']['i
 	'EXT:fluidpages/Configuration/TypoScript',
 	'EXT:fluidcontent/Configuration/TypoScript',
 	'EXT:fluidcontent_bootstrap/Configuration/TypoScript',
+	'EXT:iancontent/Configuration/TypoScript',
 	'EXT:speciality/Configuration/TypoScript', // keep loading last
 ));
 
